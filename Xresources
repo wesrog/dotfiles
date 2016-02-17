@@ -1,0 +1,36 @@
+URxvt*letterSpace: -1
+!URxvt*font: xft:Fira Sans,Fira Sans Eight:style=Eight,Regular
+!URxvt*font: xft:Fira Sans:size=14:style=Thin,Regular
+!URxvt*font: xft:M+ 2m:size=14:style=light,Regular
+URxvt*font: xft:M+ 2m:pixelsize=20
+URxvt*boldFont: xft:M+ 2m:pixelsize=20
+URxvt*italicFont: xft:M+ 2m:pixelsize=20
+URxvt*boldItalicFont: xft:M+ 2m:pixelsize=20
+!URxvt.font: xft:Hack:size=10.5
+!URxvt.internalBorder: 6
+URxvt..geometry: 80x24
+URxvt.scrollBar: false
+URxvt.cursorBlink: true
+URxvt.iso14755: False
+
+urxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+urxvt.url-select.launcher: chromium
+urxvt.url-select.underline: true
+urxvt.keysym.C-Escape: perl:keyboard-select:activate
+urxvt.keysym.Shift-C-c:   perl:clipboard:copy
+urxvt.keysym.M-v:   perl:clipboard:paste
+urxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+urxvt.clipboard.copycmd:  xsel -ib
+urxvt.clipboard.pastecmd: xsel -ob
+
+! Xft settings ---------------------------------------------------------------
+
+Xft.dpi:        96
+!Xft.lcdfilter:  lcddefault
+!Xft.autohint:   0
+!Xft.hinting:    1
+!Xft.antialias:  1
+!Xft.hintstyle:  hintfull
+!Xft.rgba:       rgb
+
+#include ".Xresources.d/solarized.colors"
